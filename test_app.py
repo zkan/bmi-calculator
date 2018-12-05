@@ -9,7 +9,7 @@ BASE_URL = '/'
 @pytest.fixture
 def client():
     client = app.test_client()
-    yield client
+    return client
 
 
 def test_page_should_render_correctly(client):
