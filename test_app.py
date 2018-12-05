@@ -40,4 +40,4 @@ def test_submit_weight_and_height_should_see_bmi_result(client):
 def test_calc_bmi():
     bmi = calc_bmi(80, 180)
 
-    assert 24.69 == bmi
+    assert bmi == 24.69
